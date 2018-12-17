@@ -1,0 +1,8 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+.idea
+.DS_Store
+server/node_modules
+server/functions/node_modules
+client/node_modules
+client/build
