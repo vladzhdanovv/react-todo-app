@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin-top: 20px;
 }
 
 .App-logo {
@@ -20,6 +21,31 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.addTodoBtn {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.listGrid {
+  text-align: left;
+}
+
+.listHeader {
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid black;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.show-grid {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 @keyframes App-logo-spin {

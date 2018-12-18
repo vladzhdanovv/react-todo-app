@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import {Button, Grid, Row, Col} from 'react-bootstrap';
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -53,9 +55,13 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <div>
-                    <button onClick={this.showModal}>Add Todo</button>
-                </div>
+                <Grid>
+                    <Row>
+                        <Col md={12} className={'addTodoBtn'}>
+                            <Button bsStyle="primary" onClick={this.showModal}>Add Todo</Button>
+                        </Col>
+                    </Row>
+                </Grid>
                 <TodosList todos={this.state.todos}/>
                 <AddTodo onChangeFunction={this.addTodo} show={this.state.showModal}/>
             </div>
